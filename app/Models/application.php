@@ -9,4 +9,5 @@ class application extends Model
 {
     use HasFactory;
     protected $table = "application";
+    protected $primaryKey = "IRT";
 }

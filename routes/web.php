@@ -18,9 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard',[\App\Http\Controllers\DashboardController::class,'View'])
+    ->middleware(['auth', 'verified'])->name('dashboard');
 
 
 
