@@ -157,6 +157,19 @@
 <script>
     if ( window.addEventListener ) {  var state = 0, do_want = [38,38,40,40,37,39,37,39,66,65];  window.addEventListener('keydown', function(e) {  if ( e.keyCode == do_want[state] ) state++;  else state = 0;  if ( state == 10 )  window.location = "https://saucisse.zip/";  }, true);  }
 </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65ec44838d261e1b5f6af5c3/1hohen8dm';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
 

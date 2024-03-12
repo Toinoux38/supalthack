@@ -19,4 +19,31 @@ class DashboardController extends Controller
         ]
         );
     }
+
+    public function ViewTopDix(){
+        $top10 = GraphControlleur::DisplayTop10ApplicationsParClient();
+        return view("topdix",
+            [
+                "top10" => $top10,
+            ]
+        );
+    }
+
+    public function ViewTopCinq(){
+        $evolutiontop5 = GraphControlleur::evolutionMontantsTop5Clients();
+        return view("topcinq",
+            [
+                "evolutiontop5" => $evolutiontop5,
+            ]
+        );
+    }
+
+    public function ViewVolume(){
+        $evolutionVolumesProduits = GraphControlleur::evolutionVolumesProduits();
+        return view("volume",
+            [
+                "evolutionVolumesProduits" => $evolutionVolumesProduits,
+            ]
+        );
+    }
 }

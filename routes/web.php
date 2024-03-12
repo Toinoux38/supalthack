@@ -21,6 +21,14 @@ Route::get('/', function () {
 Route::get('/dashboard',[\App\Http\Controllers\DashboardController::class,'View'])
     ->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/topdix',[\App\Http\Controllers\DashboardController::class,'ViewTopDix'])
+    ->middleware(['auth', 'verified'])->name('topdix');
+
+Route::get('/topcinq',[\App\Http\Controllers\DashboardController::class,'ViewTopCinq'])
+    ->middleware(['auth', 'verified'])->name('topcinq');
+
+Route::get('/volume',[\App\Http\Controllers\DashboardController::class,'ViewVolume'])
+    ->middleware(['auth', 'verified'])->name('volume');
 
 
 Route::middleware('auth')->group(function () {

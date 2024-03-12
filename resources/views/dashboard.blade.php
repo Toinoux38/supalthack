@@ -1,25 +1,6 @@
 <head>
     <title>Top 10 des applications par client</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 
 
@@ -39,24 +20,27 @@
 
                     <h2>Top 10 des applications par client</h2>
 
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Client</th>
-                            <th>Application</th>
-                            <th>Montant Total</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($top10 as $item)
+                    <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                             <tr>
-                                <td>{{ $item->NomGrandClient }}</td>
-                                <td>{{$item->NomApplication}}</td>
-                                <td>{{ $item->MontantTotal }} €</td>
+                                <th scope="col" class="py-3 px-6">Client</th>
+                                <th scope="col" class="py-3 px-6">Application</th>
+                                <th scope="col" class="py-3 px-6">Montant Total</th>
                             </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                            @foreach($top10 as $item)
+                                <tr class="bg-white border-b hover:bg-gray-50">
+                                    <td class="py-4 px-6">{{ $item->NomGrandClient }}</td>
+                                    <td class="py-4 px-6">{{$item->NomApplication}}</td>
+                                    <td class="py-4 px-6">{{ $item->MontantTotal }} €</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+
 
 
 

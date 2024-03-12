@@ -15,6 +15,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('topdix')" :active="request()->routeIs('topdix')">
+                        {{ __('Top 10 Apps') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('topcinq')" :active="request()->routeIs('topcinq')">
+                        {{ __('Top 5 Clients') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('volume')" :active="request()->routeIs('volume')">
+                        {{ __('Evolution des volumes') }}
+                    </x-nav-link>
                 </div>
             </div>
 
