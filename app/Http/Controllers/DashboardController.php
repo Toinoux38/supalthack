@@ -40,9 +40,13 @@ class DashboardController extends Controller
 
     public function ViewVolume(){
         $evolutionVolumesProduits = GraphControlleur::evolutionVolumesProduits();
+        $evolutionVolumesProduits2 = GraphControlleur::evolutionVolumesProduits2();
+
         return view("volume",
             [
                 "evolutionVolumesProduits" => $evolutionVolumesProduits,
+                "evolutionVolumesProduits2" => $evolutionVolumesProduits2,
+
             ]
         );
     }
