@@ -105,9 +105,9 @@
         <section class="cta section">
             <div class="container">
                 <div class="cta-inner section-inner">
-                    <h3 class="section-title mt-0">Besoins d'aide ?</h3>
+                    <h3 class="section-title mt-0">Rendus</h3>
                     <div class="cta-cta">
-                        <a class="button button-primary button-wide-mobile" href="https://saucisse.zip">Accéder à la plateforme de support</a>
+                        <a class="button button-primary button-wide-mobile" href="https://saucisse.zip">Accéder à la page de rendus</a>
                     </div>
                 </div>
             </div>
